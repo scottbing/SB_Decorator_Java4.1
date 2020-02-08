@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class PestoSauce extends SauceDecorator {
+public class PestoSauce extends SauceDecorator {
 
     public PestoSauce(Pizza tempPizza) {
         super(tempPizza);

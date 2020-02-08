@@ -10,7 +10,7 @@ public class Crustless extends CrustDecorator {
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "Salad ";
+        return super.getDescription() + "Crustless (Salad) ";
     }
 
     @Override
