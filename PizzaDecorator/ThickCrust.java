@@ -1,21 +1,21 @@
 package com.company;
 
-public class ThickCrust extends CrustDecorator {
+public class ThickCrust implements Pizza {
 
-    public ThickCrust(Pizza tempPizza) {
-        super(tempPizza);
+    public ThickCrust() {
+        super();
 
-        System.out.println("Adding ThickCrust");
+        System.out.println("Adding Thick Crust");
     }
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "Thick Crust ";
+        return "Thick Crust ";
     }
-
 
     @Override
     public Double getCost() {
-        return super.getCost() + 2.75;
+        return 3.10;
     }
+
 }

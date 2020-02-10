@@ -1,20 +1,21 @@
 package com.company;
 
-public class Crustless extends CrustDecorator {
+public class Crustless implements Pizza {
 
-    public Crustless(Pizza tempPizza) {
-        super(tempPizza);
+    public Crustless() {
+        super();
 
         System.out.println("Salad");
     }
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "Crustless (Salad) ";
+        return "Salad ";
     }
 
     @Override
     public Double getCost() {
-        return super.getCost() + 1.75;
+        return 1.75;
     }
+
 }
